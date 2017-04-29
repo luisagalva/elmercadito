@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>El Mercadito</title>
+    </head>
+    <body>
+
+   <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet" href="w3.css">
+
+        <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large"> &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Configurar perfil</a>
+  <a href="#" class="w3-bar-item w3-button">Compras recientes</a>
+  <a href="index.html" class="w3-bar-item w3-button">Cerrar Sesión</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Compra</h1>
+  </div>
+</div>
+
+
+<div class="w3-container">
+
+<table class="w3-table ">
+<tr>
+  <th><img src="img/Cacao.png" width=75px height="auto">
+  <p>$38.00 MXN</p>
+  <p>Cacao</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th><img src="img/Coco.png" width=75px height="auto">
+  <p>$26.00 MXN</p>
+  <p>Coco</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th>
+  	<img src="img/Mango.png" width=75px height="auto">
+  <p>$15.00 MXN</p>
+  <p>Mango</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+</tr>
+<tr>
+ <th><img src="img/Papas.png" width=75px height="auto">
+  <p>$38.00 MXN</p>
+  <p>Papa</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th><img src="img/Platano.png" width=75px height="auto">
+  <p>$26.00 MXN</p>
+  <p>Platano</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th>
+  	<img src="img/Rambutan.png" width=75px height="auto">
+  <p>$15.00 MXN</p>
+  <p>Rambutan</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+</tr>
+<tr>
+   <th><img src="img/Uva.png" width=75px height="auto">
+  <p>$38.00 MXN</p>
+  <p>Uva</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th><img src="img/Tomate.png" width=75px height="auto">
+  <p>$26.00 MXN</p>
+  <p>Tomate</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+  <th>
+  	<img src="img/Sandia.png" width=75px height="auto">
+  <p>$15.00 MXN</p>
+  <p>Sandia</p>
+  <a href="compra.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th>
+</tr>
+</table>
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+    </body>
+</html>

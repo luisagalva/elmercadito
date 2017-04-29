@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>El Mercadito</title>
+         <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet" href="www/w3.css">
+        <link rel="stylesheet" href="www/styles.css">
+        <script type="text/javascript" src="www/js/funciones.js"></script>
+    </head>
+    
+    <body>
+     <div class="w3-container w3-center">
+  <img src="www/img/Header.png" alt="Producto Tabasqueño" style="width:80%">
+   <img src="www/img/señor.png" alt="Producto Tabasqueño" style="width:80%">
+</div>
+
+ <script>
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+
+          function openPrincipal(){
+            var x = document.getElementById("usuario");
+            switch (x)
+             {
+              case expression:  "comprador"
+              opencomprador();
+                break;
+                case expression: "vendedor"
+                openvendedor();
+                break;
+              default: notValid();
+
+            }
+          }
+
+          function opencomprador(){
+            window.location.href ="comprador.html";
+           }
+          }
+
+          function openvendedor(){
+            location.replace("vendedor.html");
+          }
+
+          function notValid(){
+            alert('Ingresa un usuario valido');
+          }
+          </script>
+<!---->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Cliente')" id="defaultOpen">Cliente</button>
+  <button class="tablinks" onclick="openCity(event, 'Vendedor')">Vendedor</button>
+</div>
+
+<div id="Vendedor" class="tabcontent">
+ <input  class="inputs" type="text" name="" id="usuario" placeholder="Usuario">
+<input class="inputs" type="password" name="" value="" placeholder="Contraseña">
+  <center>
+    <a href="www/vendedor.html" class="boton">Iniciar Sesión</a>
+</center>
+</div>
+<div id="Cliente" class="tabcontent">
+
+<input  class="inputs" type="text" name="" id="usuario" placeholder="Usuario">
+<input class="inputs" type="password" name="" value="" placeholder="Contraseña">
+<center>
+      <a href="www/catalogo.html" class="boton" ">Iniciar Sesiónn</a>
+
+</div>
+
+<button class="w3-button w3-block w3-blue-gray" >Registrarse</button>
+
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>El Mercadito</title>
+    </head>
+    <body>
+
+   <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet" href="w3.css">
+
+        <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large"> &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Configurar perfil</a>
+  <a href="#" class="w3-bar-item w3-button">Ventas de hoy</a>
+  <a href="index.html" class="w3-bar-item w3-button">Cerrar Sesión</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Tus productos</h1>
+  </div>
+</div>
+
+
+<div class="w3-container">
+
+<table class="w3-table w3-centered w3-bordered">
+<tr> <th>
+    <img src="img/Uva.png" width=75px height="auto">  
+    <p>Uva</p></th>
+    <th>15 kg</th>
+    <th><a href="actualizar.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th></tr>
+
+  <tr> <th>
+    <img src="img/Coco.png" width=75px height="auto">  
+    <p>Coco</p></th>
+    <th>15 kg</th>
+    <th><a href="actualizar.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th></tr>
+
+  <tr> <th>
+    <img src="img/Platano.png" width=75px height="auto">  
+    <p>Plátano</p></th>
+    <th>15 kg</th>
+    <th><a href="actualizar.html"><button class="w3-button w3-blue-gray" >+</button></a>
+  </th></tr>
+</table>
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+    </body>
+</html>
